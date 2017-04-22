@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dota 2 Twitch Browser</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="lib/jquery.js"></script>
+    <script src="browser.js"></script>
+  </head>
+  <body>
+    <div class="title-heading clearfix">
+      <div class="title">Dota 2 Twitch Browser</div>
+      <div class="settings-header">Settings</div>
+    </div>
+    <div class="settings-container">
+      <div class="settings-item-container">
+        Streams to Show:
+        <div class="settings-input-container">
+          <input class="settings-input-box" type="number" />
+        </div>
+      </div>
+      <div class="settings-item-container">
+        Open Stream in New Window:
+        <div class="settings-input-container">
+          <input class="settings-input-checkbox" id="new-window-checkbox" type="checkbox" />
+        </div>
+      </div>
+      <div class="settings-item-container">
+        Use Popout Player:
+        <div class="settings-input-container">
+          <input class="settings-input-checkbox" id="use-popout-checkbox" type="checkbox" />
+        </div>
+      </div>
+      <div class="settings-item-container clearfix">
+        <p class="reload-view-header">Reload Streams</p>
+      </div>
+    </div>
+    <div class="stream-loading"></div>
+    <div class="stream-container"></div>
+
+    <div class="stream-loading-error 429">There was a code 429 error loading the streams.  Too many requests on the Twitch.tv API.  <p>If you see this error, email the dev at jurnacsr@gmail.com</p></div>
+    <div class="stream-loading-error 500">There was a code 500 error loading the streams.  General server error - please try again later.</div>
+    <div class="stream-loading-error 503">There was a code 503 error loading the streams.  General server error - please try again later.</div>
+    <div class="stream-loading-error 404">There was a code 404 error loading the streams.  Is the query URL mis-typed?  <p>If you see this error, email the dev at jurnacsr@gmail.com</p></div>
+    <div class="stream-loading-error 400">There was a code 400 error loading the streams.  Is the dev's Client ID key up to date?  <p>If you see this error, email the dev at jurnacsr@gmail.com</p></div>
+
+  </body>
+</html>
+

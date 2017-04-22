@@ -1,0 +1,152 @@
+html {
+	width: 420px;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 100%;
+	color: #18191b;
+	background: #efeae7;
+}
+
+div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: #18191b;
+}
+
+.title-heading {
+	border-bottom: 1px solid #18191b;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.title {
+	/*font-size: 100%;*/
+	/*text-align: center;*/
+	float: left;
+    width: 80%;
+    font-size: 125%;
+}
+
+.stream-loading {
+	background-image: url("/img/triangle.gif");
+	height: 100px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 110px;
+	background-repeat: no-repeat;
+}
+
+.settings-header {
+	cursor: pointer;
+	float: left;
+    width: 20%;		
+    position: relative;
+    top: 3px;	
+} 
+
+.settings-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	overflow: hidden;
+	border-bottom: 1px solid #18191b;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.settings-item-container {
+	margin-bottom: 10px;
+}
+
+.settings-input-container {
+	float: right;
+    position: relative;
+    top: -7px;
+}
+
+.settings-input-box {    
+	width: 60px;
+    float: right;
+}
+
+.stream-container {
+	/*display: none;*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stream-loading {
+	display: none;
+}
+
+.stream-loading-error {
+	display: none;
+	margin-top: 50px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stream-loading-error > p {
+	font-size: 90%;
+	text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stream-link-image {
+	float: left;
+    width: 80px;
+    height: 45px;
+    border: 1px solid #18191b;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.stream-link-text {
+	float: left;
+}
+
+.stream-link-container {
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #18191b;
+	padding-bottom: 10px;
+}
+
+.stream-link-text-title {
+	margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.stream-link-text-status {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+}
+
+.reload-view-header {
+	float: right;
+	text-decoration: underline;
+	cursor: pointer;
+}
